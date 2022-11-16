@@ -1,0 +1,18 @@
+import {Col, Row} from 'react-bootstrap';
+import tempItems from '../temp/tempitems.json';
+import {Item} from './Item';
+
+export function Store() {
+    return (
+        <>
+        <h1>Store</h1>
+        <Row md={2} xs={1} lg={3} className="g-3">
+        {tempItems.map(item => (
+          <Col key={item.id}>
+            <Item {...item} />
+          </Col>
+        ))}
+      </Row>
+    </>
+    );
+}
