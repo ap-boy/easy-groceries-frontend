@@ -1,17 +1,32 @@
 import {Col, Row} from 'react-bootstrap';
 import tempItems from '../temp/tempitems.json';
-import {Item} from './Item';
+import {StoreItem} from './StoreItem';
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export function Store() {
+
+  const [storeItems, setStoreItems] = useState([]);
+ 
+  useEffect(() => {
+    axios.get("https://localhost:7260/StoreItem").then((response) => {
+      setStoreItems((data) => {
+        return response.data;
+      });
+    });
+  }, []);
+
     return (
         <>
         <h1>Store</h1>
         <Row md={2} xs={1} lg={3} className="g-3">
-        {tempItems.map(item => (
-          <Col key={item.id}>
-            <Item {...item} />
+        {storeItems.map((storeitem: any) => {
+          return (
+          <Col key={storeitem.id}>
+            <StoreItem {...storeitem} />
           </Col>
-        ))}
+          );
+        })}
       </Row>
     </>
     );
