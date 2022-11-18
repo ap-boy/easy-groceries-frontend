@@ -3,42 +3,42 @@
     "id": 1,
     "name": "Milk",
     "price": 1.65,
-    "imgUrl": "milk.png"
+    "description": "milk.png"
   },
   {
     "id": 2,
     "name": "Bread",
     "price": 1.50,
-    "imgUrl": "bread.png"
+    "description": "bread.png"
   },
   {
     "id": 3,
     "name": "Cheese",
     "price": 4.99,
-    "imgUrl": "cheese.png"
+    "description": "cheese.png"
   },
   {
     "id": 4,
     "name": "Coffee",
     "price": 3.85,
-    "imgUrl": "coffee.png"
+    "description": "coffee.png"
   },
   {
     "id": 5,
     "name": "Tea",
     "price": 3.55,
-    "imgUrl": "tea.png"
+    "description": "tea.png"
   },
   {
     "id": 6,
     "name": "Chicken",
     "price": 8.95,
-    "imgUrl": "chicken.png"
+    "description": "chicken.png"
   },
   {
     "id": 7,
     "name": "Mince",
     "price": 10.85,
-    "imgUrl": "mince.png"
+    "description": "mince.png"
   }
 ]
