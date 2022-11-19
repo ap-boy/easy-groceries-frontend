@@ -1,6 +1,6 @@
 import {Col, Row} from 'react-bootstrap';
 import tempItems from '../temp/tempitems.json';
-import {StoreItem} from './StoreItem';
+import StoreItem from './StoreItem';
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -23,7 +23,7 @@ export function Store() {
         {storeItems.map((storeitem: any) => {
           return (
           <Col key={storeitem.id}>
-            <StoreItem {...storeitem} />
+            <StoreItem key={storeitem.id} data={storeitem}/>
           </Col>
           );
         })}
