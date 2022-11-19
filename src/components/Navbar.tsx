@@ -20,6 +20,9 @@ import {
             <Nav.Link to="/about" as={NavLink}>
               About
             </Nav.Link>
+            <Nav.Link to="/cart" as={NavLink}>
+              Cart
+            </Nav.Link>
           </Nav>
         </Container>
       </NavbarContainer>
