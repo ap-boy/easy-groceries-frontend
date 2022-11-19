@@ -6,7 +6,7 @@ export function Home() {
         <div>
         <img src={headerImage} />
         <h1>EasyGroceries Welcomes You!</h1>
-        <Link to="/store">
+        <Link to="/store" className="btn btn-primary">
           <h1><span className="button">
             Enter Store
           </span></h1>
