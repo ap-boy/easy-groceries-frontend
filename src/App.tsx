@@ -9,19 +9,26 @@ import { Home } from './components/Home';
 import { Store } from './components/Store';
 import { NotFound } from './components/NotFound';
 import { About } from './components/About';
+import  Cart  from './components/Cart';
+import CartProvider from './contexts/cart';
+import { Checkout } from './components/Checkout';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Container className="mb-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/store" element={<Store />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Container>
+        <CartProvider>   
+          <Navbar />
+          <Container className="mb-4">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/store" element={<Store />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Container>
+        </CartProvider>
     </div>
   );
 }
