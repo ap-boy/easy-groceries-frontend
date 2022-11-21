@@ -21,7 +21,7 @@ const Cart = () => {
         <ul className="cart-items">
           {items.map((storeItem) => {
             return (
-              <Card style={{ width: '18rem' }}>              
+              <Card style={{ width: '18rem' }} key={storeItem.id}>              
                   <Card style={{ width: '18rem' }}>
                     <Card.Body>
                         <Card.Title>{storeItem.name}</Card.Title>                    

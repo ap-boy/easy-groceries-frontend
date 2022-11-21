@@ -1,6 +1,6 @@
 import {Col, Row} from 'react-bootstrap';
 import tempItems from '../temp/tempitems.json';
-import StoreItem from './StoreItem';
+import StoreItem from '../components/StoreItem';
 import { useEffect, useState } from "react";
 import axios from "axios";
 

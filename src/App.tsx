@@ -5,13 +5,13 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { Navbar } from './components/Navbar';
-import { Home } from './components/Home';
-import { Store } from './components/Store';
-import { NotFound } from './components/NotFound';
-import { About } from './components/About';
+import { Home } from './pages/home';
+import { Store } from './pages/store';
+import { NotFound } from './pages/notFound';
+import { About } from './pages/about';
 import  Cart  from './components/Cart';
 import CartProvider from './contexts/cart';
-import { Checkout } from './components/Checkout';
+import { Checkout } from './pages/checkout';
 
 function App() {
   return (
